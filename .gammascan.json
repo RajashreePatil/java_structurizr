@@ -8,8 +8,8 @@
         {
             "dataDir": "",
             "repository": {
-                "uid": "15ada3911e25f6e5f32ef9cf92a39569",
-                "projectName": "java-raj",
+                "uid": "2ccf77ba5ca1fb86a6a04cc039434118",
+                "projectName": "java-RemoteTypeRepo",
                 "languages": [
                     "JAVA"
                 ],
@@ -26,14 +26,6 @@
             },
             "modules": {
                 "codeissues": [
-                    {
-                        "name": "gamma_java",
-                        "enabled": true,
-                        "config": {
-                            "rules": [],
-                            "options": []
-                        }
-                    },
                     {
                         "name": "pmd",
                         "enabled": true,
@@ -54,15 +46,66 @@
                                 }
                             ]
                         }
-                    }
-                ],
-                "relevance": [
+                    },
                     {
-                        "name": "relevance",
+                        "name": "gamma_java",
                         "enabled": true,
                         "config": {
                             "rules": [],
                             "options": []
+                        }
+                    },
+                    {
+                        "name": "gamma_generic",
+                        "enabled": false,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "coverage": [
+                    {
+                        "name": "clover",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "jacoco",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "binaryReportPath",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": false
+                                },
+                                {
+                                    "name": "xmlReportPath",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": false
+                                }
+                            ]
                         }
                     }
                 ],
@@ -80,6 +123,16 @@
                                     "required": true
                                 }
                             ]
+                        }
+                    }
+                ],
+                "relevance": [
+                    {
+                        "name": "relevance",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
                         }
                     }
                 ]
