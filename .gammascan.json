@@ -8,8 +8,8 @@
         {
             "dataDir": "",
             "repository": {
-                "uid": "2ccf77ba5ca1fb86a6a04cc039434118",
-                "projectName": "java-RemoteTypeRepo",
+                "uid": "55e6fdf807aac148275ccca8e267bab6",
+                "projectName": "java_structurizer",
                 "languages": [
                     "JAVA"
                 ],
