@@ -8,8 +8,8 @@
         {
             "dataDir": "",
             "repository": {
-                "uid": "3421932542d3528e20786ee71629efd8",
-                "projectName": "java_structurizer",
+                "uid": "d9d5f646bb97f087cf30b241567cecea",
+                "projectName": "java-remotethroughconfigFile",
                 "languages": [
                     "JAVA"
                 ],
@@ -26,6 +26,14 @@
             },
             "modules": {
                 "codeissues": [
+                    {
+                        "name": "gamma_java",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
                     {
                         "name": "pmd",
                         "enabled": true,
@@ -48,16 +56,35 @@
                         }
                     },
                     {
-                        "name": "gamma_java",
+                        "name": "gamma_generic",
+                        "enabled": false,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "relevance": [
+                    {
+                        "name": "relevance",
                         "enabled": true,
                         "config": {
                             "rules": [],
                             "options": []
                         }
-                    },
+                    }
+                ],
+                "unittest": [
                     {
-                        "name": "gamma_generic",
-                        "enabled": false,
+                        "name": "junit",
+                        "enabled": true,
                         "config": {
                             "rules": [],
                             "options": [
@@ -106,33 +133,6 @@
                                     "required": false
                                 }
                             ]
-                        }
-                    }
-                ],
-                "unittest": [
-                    {
-                        "name": "junit",
-                        "enabled": true,
-                        "config": {
-                            "rules": [],
-                            "options": [
-                                {
-                                    "name": "reportDir",
-                                    "type": "upload",
-                                    "value": "",
-                                    "required": true
-                                }
-                            ]
-                        }
-                    }
-                ],
-                "relevance": [
-                    {
-                        "name": "relevance",
-                        "enabled": true,
-                        "config": {
-                            "rules": [],
-                            "options": []
                         }
                     }
                 ]
