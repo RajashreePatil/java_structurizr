@@ -8,8 +8,8 @@
         {
             "dataDir": "",
             "repository": {
-                "uid": "d9d5f646bb97f087cf30b241567cecea",
-                "projectName": "java-remotethroughconfigFile",
+                "uid": "41c9d8d2405c0bcf3eaafe1d36ceb2c1",
+                "projectName": "java_structurizr_25/05",
                 "languages": [
                     "JAVA"
                 ],
@@ -35,6 +35,21 @@
                         }
                     },
                     {
+                        "name": "gamma_generic",
+                        "enabled": false,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
                         "name": "pmd",
                         "enabled": true,
                         "config": {
@@ -50,48 +65,6 @@
                                     "name": "ruleSets",
                                     "type": "text",
                                     "value": "rulesets/java/strictexception.xml,rulesets/java/basic.xml,rulesets/java/design.xml",
-                                    "required": true
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "gamma_generic",
-                        "enabled": false,
-                        "config": {
-                            "rules": [],
-                            "options": [
-                                {
-                                    "name": "reportDir",
-                                    "type": "upload",
-                                    "value": "",
-                                    "required": true
-                                }
-                            ]
-                        }
-                    }
-                ],
-                "relevance": [
-                    {
-                        "name": "relevance",
-                        "enabled": true,
-                        "config": {
-                            "rules": [],
-                            "options": []
-                        }
-                    }
-                ],
-                "unittest": [
-                    {
-                        "name": "junit",
-                        "enabled": true,
-                        "config": {
-                            "rules": [],
-                            "options": [
-                                {
-                                    "name": "reportDir",
-                                    "type": "upload",
-                                    "value": "",
                                     "required": true
                                 }
                             ]
@@ -131,6 +104,38 @@
                                     "type": "upload",
                                     "value": "",
                                     "required": false
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "relevance": [
+                    {
+                        "name": "relevance",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "mode",
+                                    "value": "git"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "unittest": [
+                    {
+                        "name": "junit",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
                                 }
                             ]
                         }
