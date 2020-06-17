@@ -8,8 +8,8 @@
         {
             "dataDir": "",
             "repository": {
-                "uid": "bc6bc1d6898e646119dda17bfafab331",
-                "projectName": "java_structurizr_17thJune",
+                "uid": "429b32279bc603bb843dcc2def0fdb2f",
+                "projectName": "java_structurizr",
                 "languages": [
                     "JAVA"
                 ],
@@ -25,52 +25,6 @@
                 "includePaths": []
             },
             "modules": {
-                "codeissues": [
-                    {
-                        "name": "gamma_java",
-                        "enabled": true,
-                        "config": {
-                            "rules": [],
-                            "options": []
-                        }
-                    },
-                    {
-                        "name": "gamma_generic",
-                        "enabled": false,
-                        "config": {
-                            "rules": [],
-                            "options": [
-                                {
-                                    "name": "reportDir",
-                                    "type": "upload",
-                                    "value": "",
-                                    "required": true
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "pmd",
-                        "enabled": true,
-                        "config": {
-                            "rules": [],
-                            "options": [
-                                {
-                                    "name": "javaVersion",
-                                    "type": "text",
-                                    "value": "1.8",
-                                    "required": false
-                                },
-                                {
-                                    "name": "ruleSets",
-                                    "type": "text",
-                                    "value": "rulesets/java/strictexception.xml,rulesets/java/basic.xml,rulesets/java/design.xml",
-                                    "required": true
-                                }
-                            ]
-                        }
-                    }
-                ],
                 "coverage": [
                     {
                         "name": "clover",
@@ -109,6 +63,23 @@
                         }
                     }
                 ],
+                "unittest": [
+                    {
+                        "name": "junit",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    }
+                ],
                 "relevance": [
                     {
                         "name": "relevance",
@@ -124,10 +95,39 @@
                         }
                     }
                 ],
-                "unittest": [
+                "codeissues": [
                     {
-                        "name": "junit",
+                        "name": "pmd",
                         "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "javaVersion",
+                                    "type": "text",
+                                    "value": "1.8",
+                                    "required": false
+                                },
+                                {
+                                    "name": "ruleSets",
+                                    "type": "text",
+                                    "value": "rulesets/java/strictexception.xml,rulesets/java/basic.xml,rulesets/java/design.xml",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "gamma_java",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "name": "gamma_generic",
+                        "enabled": false,
                         "config": {
                             "rules": [],
                             "options": [
