@@ -8,8 +8,8 @@
         {
             "dataDir": "",
             "repository": {
-                "uid": "df3753a2ad55cea45ae21ce1f69c3c9c",
-                "projectName": "java_structurizr_scanconfigFile",
+                "uid": "bc6bc1d6898e646119dda17bfafab331",
+                "projectName": "java_structurizr_17thJune",
                 "languages": [
                     "JAVA"
                 ],
@@ -25,23 +25,6 @@
                 "includePaths": []
             },
             "modules": {
-                "unittest": [
-                    {
-                        "name": "junit",
-                        "enabled": true,
-                        "config": {
-                            "rules": [],
-                            "options": [
-                                {
-                                    "name": "reportDir",
-                                    "type": "upload",
-                                    "value": "",
-                                    "required": true
-                                }
-                            ]
-                        }
-                    }
-                ],
                 "codeissues": [
                     {
                         "name": "gamma_java",
@@ -136,6 +119,23 @@
                                 {
                                     "name": "mode",
                                     "value": "git"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "unittest": [
+                    {
+                        "name": "junit",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
                                 }
                             ]
                         }
